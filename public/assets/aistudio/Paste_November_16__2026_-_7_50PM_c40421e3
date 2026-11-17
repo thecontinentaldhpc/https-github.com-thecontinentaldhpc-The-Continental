@@ -1,0 +1,1132 @@
+# THE CONTINENTAL
+## COMPLETE MASTER WEBSITE DEVELOPMENT PROMPT
+### Premium International Digital Newspaper & Monthly Magazine
+
+You are an elite full-stack development team consisting of:
+
+- Senior software architect
+- Professional newspaper website designer
+- UI/UX designer
+- Frontend developer
+- Backend developer
+- Database engineer
+- Cybersecurity specialist
+- SEO specialist
+- Digital publishing consultant
+
+Your assignment is to design, develop, test and deliver a complete, professional, production-ready digital newspaper and magazine platform called THE CONTINENTAL.
+
+This must be a real, fully functional website with a working backend, database, authentication, content management, editorial workflow, public writing submission system, newspaper PDF publishing, monthly magazine management and administrator dashboard.
+
+DO NOT create a static website, simple HTML demonstration, frontend-only template or incomplete prototype.
+
+Build an actual publishing platform.
+
+==================================================
+1. OFFICIAL PUBLICATION IDENTITY
+==================================================
+
+Publication name: THE CONTINENTAL
+
+Official website:
+https://thecontinental.dhpc.in
+
+Official tagline:
+Independent Journalism. Informed World.
+
+Official editorial motto:
+Truth Without Fear. Facts Without Favour.
+
+Publication type:
+Independent Digital Newspaper and Magazine.
+
+First newspaper publication:
+1 January 2027.
+
+First magazine publication:
+January 2027.
+
+Language:
+English only.
+
+Coverage:
+- International
+- National
+- Regional
+
+Administration:
+One Super Administrator.
+
+Public contributions:
+Anyone can submit original writing.
+
+Editorial policy:
+All submissions must undergo editorial review and approval before publication.
+
+Hosting:
+Free or low-cost hosting initially.
+
+Design inspiration:
+The Hindu's premium newspaper presentation, editorial hierarchy, typography, navigation and information density, combined with original THE CONTINENTAL branding.
+
+IMPORTANT:
+Create an original publication identity. Do not copy The Hindu's logo, source code, copyrighted images, proprietary content or exact branded design.
+
+==================================================
+2. BRANDING AND MASTHEAD
+==================================================
+
+Create a distinctive and professional newspaper masthead.
+
+The masthead must include:
+
+THE CONTINENTAL
+
+Independent Journalism. Informed World.
+
+Truth Without Fear. Facts Without Favour.
+
+Design characteristics:
+
+- Elegant newspaper-style serif typography.
+- Premium international editorial identity.
+- Black and white foundation.
+- Restrained deep burgundy or dark red accents.
+- Strong typographic hierarchy.
+- Original logo and favicon.
+- Excellent readability.
+- Desktop and mobile compatibility.
+
+Use an editorial serif such as Playfair Display for headlines and Source Sans 3 or Inter for body text.
+
+The publication name must be clearly visible on every major website section.
+
+==================================================
+3. DESIGN AND USER EXPERIENCE
+==================================================
+
+Create a premium international newspaper website.
+
+Design references:
+The editorial sophistication of The Hindu, established international newspaper websites and high-quality digital publications.
+
+Required characteristics:
+
+- Professional newspaper layout.
+- Multi-column editorial grid.
+- Strong lead-story presentation.
+- Elegant typography.
+- Clean white background.
+- Thin divider lines.
+- Professional photography.
+- Well-organized navigation.
+- Consistent spacing.
+- Refined hover effects.
+- Responsive layouts.
+- Fast loading.
+- Accessible interface.
+
+Avoid:
+
+- Generic blog templates.
+- Excessive rounded cards.
+- Unnecessary gradients.
+- Startup-style landing pages.
+- Oversized decorative elements.
+- Fake news widgets.
+- Non-functional buttons.
+
+The finished website must look like a serious international news publication.
+
+==================================================
+4. COMPLETE WEBSITE NAVIGATION
+==================================================
+
+Create the following pages:
+
+1. Home
+2. World
+3. India
+4. Regional
+5. Politics
+6. Business
+7. Economy
+8. Education
+9. Science & Technology
+10. Environment
+11. Sports
+12. Opinion
+13. Editorial
+14. Magazine
+15. E-Paper
+16. Publish Your Writing
+17. About Us
+18. Contact Us
+19. Search
+20. Editorial Policy
+21. Corrections Policy
+22. Privacy Policy
+23. Terms and Conditions
+
+All navigation items must work.
+
+Build professional dropdown menus where necessary.
+
+==================================================
+5. AUTOMATIC DATE, DAY AND CALENDAR SYSTEM
+==================================================
+
+THIS IS A MANDATORY FEATURE.
+
+Implement a fully automatic date and day system across the website.
+
+Official publication timezone:
+Asia/Kolkata (IST, UTC+05:30).
+
+The masthead must automatically display:
+
+- Current weekday.
+- Current date.
+- Current month.
+- Current year.
+
+Example:
+
+MONDAY | 4 JANUARY 2027
+
+This is an illustrative example. Always display the actual current date.
+
+The system must:
+
+1. Automatically detect the current date.
+2. Automatically identify the correct weekday.
+3. Update the date at midnight IST.
+4. Update month and year automatically.
+5. Handle leap years.
+6. Handle different month lengths.
+7. Avoid UTC date-shift errors.
+8. Work on desktop, tablet and mobile.
+9. Require no manual date editing.
+10. Use a reusable date utility throughout the application.
+
+Use timezone-aware date formatting with Intl.DateTimeFormat and the IANA timezone Asia/Kolkata.
+
+Store timestamps consistently and display them in the publication timezone.
+
+Prevent server/client hydration mismatches.
+
+Create a professional date bar below the masthead.
+
+Example:
+
+MONDAY
+4 JANUARY 2027
+INDEPENDENT DIGITAL NEWSPAPER
+
+The location label, if displayed, must be configurable.
+
+IMPORTANT DISTINCTION:
+
+The current calendar date must update automatically.
+
+Historical article dates, newspaper edition dates and magazine publication dates must never change when the calendar advances.
+
+==================================================
+6. HOMEPAGE
+==================================================
+
+Create a complete newspaper homepage.
+
+SECTION 1: MASTHEAD
+- Logo.
+- Publication name.
+- Tagline.
+- Editorial motto where appropriate.
+- Automatic date and day.
+- Search.
+- Navigation.
+
+SECTION 2: BREAKING NEWS
+- Administrator-controlled breaking news.
+- Optional horizontal scrolling ticker.
+- Links to relevant published stories.
+
+SECTION 3: LEAD STORY
+- Large featured photograph.
+- Main headline.
+- Summary.
+- Author.
+- Publication date.
+- Read Article link.
+
+SECTION 4: TOP STORIES
+- Multiple-column layout.
+- Secondary headlines.
+- Thumbnails.
+- Short descriptions.
+
+SECTION 5: WORLD NEWS
+
+SECTION 6: NATIONAL NEWS
+
+SECTION 7: REGIONAL NEWS
+
+SECTION 8: POLITICS AND ECONOMY
+
+SECTION 9: EDUCATION AND TECHNOLOGY
+
+SECTION 10: ENVIRONMENT AND SPORTS
+
+SECTION 11: OPINION AND EDITORIAL
+
+SECTION 12: LATEST NEWS
+
+SECTION 13: THE CONTINENTAL MAGAZINE
+
+SECTION 14: E-PAPER
+
+SECTION 15: NEWSLETTER
+
+SECTION 16: FOOTER
+
+The administrator must control which articles appear in featured sections.
+
+Only genuinely published database content may appear as live news.
+
+==================================================
+7. NEWS AND ARTICLE MANAGEMENT
+==================================================
+
+Build a complete article publishing system.
+
+Every article must support:
+
+- Headline.
+- Subheadline.
+- Summary.
+- Full article.
+- Featured image.
+- Image caption.
+- Image credit.
+- Author.
+- Author biography.
+- Category.
+- Tags.
+- URL slug.
+- Publication date.
+- Last updated date.
+- SEO title.
+- SEO description.
+- Draft status.
+- Publication status.
+- Featured status.
+- Breaking-news status.
+
+Create a rich text editor supporting:
+
+- Headings.
+- Paragraphs.
+- Bold.
+- Italic.
+- Hyperlinks.
+- Blockquotes.
+- Lists.
+- Images.
+- Captions.
+
+Article pages must have professional typography, author information, publication dates, reading time, social sharing, related stories and print-friendly formatting.
+
+Use SEO-friendly article URLs.
+
+==================================================
+8. PUBLISH YOUR WRITING
+==================================================
+
+Create a dedicated public page titled:
+
+PUBLISH YOUR WRITING
+
+Introduction:
+
+"Have a perspective, an idea or a story worth sharing? THE CONTINENTAL welcomes original contributions from writers, students, researchers and independent contributors."
+
+Build a working public submission form.
+
+Fields:
+
+1. Full name.
+2. Email address.
+3. Article title.
+4. Article category.
+5. Short description.
+6. Full article content.
+7. Optional featured image.
+8. Author biography.
+9. Originality confirmation.
+10. Agreement to submission terms.
+
+Anyone must be able to submit without registering an account.
+
+SUBMISSION WORKFLOW:
+
+1. Contributor fills the form.
+2. Server validates the information.
+3. Submission is saved in the database.
+4. Unique submission ID is generated.
+5. Confirmation message appears.
+6. Submission enters the administrator dashboard.
+7. Administrator reviews the article.
+8. Administrator can approve, reject, edit or request revisions.
+9. Only approved and published articles become publicly accessible.
+
+Display this confirmation:
+
+"Your article has been successfully submitted to THE CONTINENTAL.
+
+Thank you for contributing.
+
+Our editorial team will review your submission. If selected, your article may be published after editorial approval.
+
+Submission ID: [Unique ID]"
+
+Submission statuses:
+
+- Submitted
+- Under Review
+- Revision Requested
+- Approved
+- Rejected
+- Published
+
+Allow internal editorial notes.
+
+Never expose internal notes publicly.
+
+Implement spam prevention, server-side validation, upload restrictions and rate limiting.
+
+==================================================
+9. MONTHLY MAGAZINE
+==================================================
+
+Create a separate publication section:
+
+THE CONTINENTAL MAGAZINE
+
+Publication frequency:
+Monthly.
+
+First issue:
+January 2027.
+
+Design a premium digital magazine experience.
+
+Magazine homepage must include:
+
+- Large cover image.
+- Issue title.
+- Month and year.
+- Editor's note.
+- Featured articles.
+- Contents.
+- Magazine categories.
+- PDF preview.
+- Download PDF.
+- Previous issues.
+- Upcoming issue.
+
+Suggested categories:
+
+- World Affairs
+- Politics
+- Culture
+- Education
+- Literature
+- Science and Technology
+- Society
+- Interviews
+- Special Reports
+
+Every magazine edition must have:
+
+- Unique issue ID.
+- Month.
+- Year.
+- Cover image.
+- Editorial introduction.
+- Featured articles.
+- Article collection.
+- PDF file.
+- Publication status.
+
+Create an archive by year and month.
+
+Example:
+
+2027
+- January
+- February
+- March
+- April
+- May
+- June
+
+Allow the administrator to create, edit, preview, schedule, publish and archive magazine issues.
+
+Create future monthly issue records as planned or upcoming, not automatically published.
+
+==================================================
+10. DIGITAL NEWSPAPER / E-PAPER
+==================================================
+
+Create a professional E-Paper section.
+
+First edition:
+1 January 2027.
+
+Features:
+
+- Edition archive.
+- Publication date.
+- Edition number.
+- PDF upload.
+- PDF preview.
+- PDF download.
+- Desktop reading.
+- Mobile-friendly viewing.
+- Previous editions.
+
+The administrator must be able to upload and publish the final newspaper PDF.
+
+Never display a working download button when a PDF is unavailable.
+
+Before the first publication, show:
+
+"THE CONTINENTAL — Our first newspaper edition arrives on 1 January 2027."
+
+After publication, show the actual approved newspaper edition.
+
+Each edition must retain its original publication date permanently.
+
+==================================================
+11. ABOUT US
+==================================================
+
+Create a premium About Us page.
+
+OUR STORY
+
+THE CONTINENTAL is an independent digital newspaper and magazine committed to delivering credible, informative and accessible journalism.
+
+OUR MISSION
+
+To inform readers through accurate reporting, thoughtful analysis and responsible journalism.
+
+OUR VISION
+
+To build a trusted independent publication connecting readers with important developments across the world.
+
+OUR EDITORIAL PRINCIPLES
+
+- Accuracy.
+- Independence.
+- Fairness.
+- Transparency.
+- Accountability.
+- Responsible reporting.
+- Respect for different perspectives.
+
+OUR MOTTO
+
+"Truth Without Fear. Facts Without Favour."
+
+OUR PUBLICATIONS
+
+- Digital newspaper.
+- Daily news.
+- Monthly magazine.
+- Editorials.
+- Opinion.
+- Independent contributions.
+
+Do not invent founder details, office addresses, registration details or organizational credentials.
+
+==================================================
+12. ADMINISTRATOR DASHBOARD
+==================================================
+
+Create a complete, secure administrator dashboard.
+
+Route:
+/admin
+
+Administration:
+One Super Administrator.
+
+Protect the dashboard with secure authentication and server-side authorization.
+
+Do not provide public access to administrator functions.
+
+DASHBOARD OVERVIEW:
+
+- Total articles.
+- Published articles.
+- Draft articles.
+- Pending submissions.
+- Approved submissions.
+- Magazine issues.
+- Newspaper editions.
+- Newsletter subscribers.
+- Recent activities.
+
+ADMIN MODULES:
+
+1. Dashboard.
+2. News Management.
+3. Article Management.
+4. Public Submissions.
+5. Magazine Management.
+6. E-Paper Management.
+7. Categories.
+8. Authors.
+9. Homepage Management.
+10. Breaking News.
+11. Media Library.
+12. Newsletter.
+13. Contact Messages.
+14. SEO Settings.
+15. Website Settings.
+16. Editorial Policies.
+17. Security.
+18. Audit Logs.
+
+ADMIN CAPABILITIES:
+
+- Create articles.
+- Edit articles.
+- Delete or archive articles.
+- Preview articles.
+- Publish immediately.
+- Schedule publication.
+- Unpublish articles.
+- Feature homepage articles.
+- Manage breaking news.
+- Review public submissions.
+- Approve and reject submissions.
+- Request revisions.
+- Create magazine editions.
+- Upload magazine PDFs.
+- Upload newspaper PDFs.
+- Manage images.
+- Manage categories.
+- Manage authors.
+- Update About Us.
+- Update launch announcements.
+- Manage website settings.
+
+Add confirmation dialogs for destructive actions.
+
+Maintain administrator activity logs.
+
+==================================================
+13. AUTOMATIC CONTENT SCHEDULING
+==================================================
+
+Build a timezone-aware scheduling system.
+
+Support scheduling for:
+
+- Articles.
+- Breaking news.
+- Magazine editions.
+- Newspaper editions.
+
+All schedules must use Asia/Kolkata.
+
+The current date must update automatically.
+
+Scheduled articles may be published automatically only when their publication time arrives and they have passed the required editorial approval.
+
+Magazine and newspaper editions must remain unpublished until the administrator has uploaded and approved the final files.
+
+Preserve historical publication information.
+
+==================================================
+14. SEARCH SYSTEM
+==================================================
+
+Build functional website-wide search.
+
+Search:
+
+- Headlines.
+- Article text.
+- Authors.
+- Categories.
+- Magazine editions.
+- Newspaper editions.
+
+Add filters for:
+
+- Publication date.
+- Category.
+- Content type.
+
+Implement pagination and useful search-result previews.
+
+==================================================
+15. NEWSLETTER AND CONTACT
+==================================================
+
+NEWSLETTER:
+
+Create an email subscription system.
+
+Collect email, consent and subscription timestamp.
+
+Prevent duplicate subscriptions.
+
+Provide unsubscribe functionality.
+
+CONTACT:
+
+Create a contact form with:
+
+- Name.
+- Email.
+- Subject.
+- Message.
+
+Store messages securely.
+
+Allow the administrator to view and manage them.
+
+==================================================
+16. TECHNICAL STACK
+==================================================
+
+Preferred technology:
+
+Frontend:
+- Next.js.
+- React.
+- TypeScript.
+- Tailwind CSS.
+
+Backend:
+- Next.js server-side functionality.
+
+Database:
+- Supabase PostgreSQL.
+
+Authentication:
+- Supabase Auth.
+
+Storage:
+- Supabase Storage.
+
+Hosting:
+- Vercel or equivalent low-cost hosting.
+
+Domain:
+thecontinental.dhpc.in
+
+Use current stable and compatible dependencies.
+
+Create a maintainable, organized application.
+
+Suggested project structure:
+
+the-continental/
+  public/
+    images/
+    logo/
+    magazine/
+    icons/
+
+  src/
+    app/
+      page.tsx
+      world/
+      india/
+      regional/
+      politics/
+      business/
+      opinion/
+      editorial/
+      magazine/
+      epaper/
+      article/
+      publish-your-writing/
+      about/
+      contact/
+      search/
+      admin/
+
+    components/
+    features/
+      articles/
+      submissions/
+      magazine/
+      epaper/
+      newsletter/
+
+    lib/
+    hooks/
+    types/
+    styles/
+
+  supabase/
+    migrations/
+    seed.sql
+
+  tests/
+  .env.example
+  package.json
+  README.md
+  deployment.md
+
+Improve the structure where necessary.
+
+==================================================
+17. DATABASE ARCHITECTURE
+==================================================
+
+Create relational PostgreSQL tables for:
+
+1. profiles
+2. articles
+3. categories
+4. authors
+5. submissions
+6. magazines
+7. magazine_articles
+8. epaper_editions
+9. media_assets
+10. newsletter_subscribers
+11. contact_messages
+12. site_settings
+13. audit_logs
+
+Requirements:
+
+- UUID primary keys.
+- Foreign keys.
+- Indexes.
+- Unique constraints.
+- Created and updated timestamps.
+- Referential integrity.
+- Publication statuses.
+- Proper migrations.
+
+Implement Row Level Security.
+
+PUBLIC USERS:
+
+- Read published articles.
+- Read published magazine issues.
+- Access available e-paper editions.
+- Submit original writing.
+- Cannot access unpublished articles.
+- Cannot access administrative information.
+
+SUPER ADMINISTRATOR:
+
+- Manage all authorized publication content.
+- Review submissions.
+- Manage newspaper and magazine editions.
+- Manage settings.
+- Access administrative records.
+
+Never expose service-role keys to the frontend.
+
+All privileged operations must execute securely on the server.
+
+==================================================
+18. SECURITY
+==================================================
+
+Implement:
+
+- Secure authentication.
+- Protected administrator routes.
+- Server-side authorization.
+- Row Level Security.
+- Input validation.
+- Output sanitization.
+- Secure sessions.
+- Rate limiting.
+- Spam prevention.
+- File upload validation.
+- File size restrictions.
+- Safe error handling.
+- Audit logs.
+- Environment variable protection.
+- Secure password handling.
+
+Never store passwords in plaintext.
+
+Never hardcode administrator credentials.
+
+Provide a secure first-administrator setup procedure.
+
+==================================================
+19. SEO AND PERFORMANCE
+==================================================
+
+Implement:
+
+- Unique page titles.
+- Meta descriptions.
+- Canonical URLs.
+- Open Graph metadata.
+- Social sharing images.
+- XML sitemap.
+- robots.txt.
+- NewsArticle structured data.
+- Organization structured data.
+- Breadcrumbs.
+- Semantic HTML.
+- Optimized images.
+- Lazy loading.
+- Pagination.
+- Caching.
+
+Optimize Core Web Vitals.
+
+==================================================
+20. RESPONSIVE DESIGN
+==================================================
+
+Support:
+
+- Desktop.
+- Laptop.
+- Tablet.
+- Mobile.
+
+Mobile requirements:
+
+- Compact masthead.
+- Hamburger navigation.
+- Readable headlines.
+- Responsive images.
+- Touch-friendly controls.
+- Proper article formatting.
+- Magazine cover responsiveness.
+- Easy e-paper access.
+- No horizontal overflow.
+
+==================================================
+21. LAUNCH PLAN
+==================================================
+
+FIRST NEWSPAPER:
+1 JANUARY 2027.
+
+FIRST MAGAZINE:
+JANUARY 2027.
+
+Before launch:
+
+- Finalize branding.
+- Complete website.
+- Configure database.
+- Configure administrator authentication.
+- Connect domain.
+- Enable HTTPS.
+- Test article publishing.
+- Test article submission.
+- Test editorial approval.
+- Test magazine creation.
+- Test e-paper upload.
+- Test PDF downloads.
+- Test mobile layouts.
+- Test date system.
+- Verify SEO.
+- Configure backups.
+
+Before the first publication, display a professional launch announcement.
+
+After publication, display the actual uploaded and approved editions.
+
+Do not automatically publish unfinished content.
+
+==================================================
+22. TESTING AND QUALITY ASSURANCE
+==================================================
+
+Test every essential workflow.
+
+PUBLIC WEBSITE:
+- Homepage.
+- Navigation.
+- Categories.
+- Articles.
+- Search.
+- About Us.
+- Contact.
+- Newsletter.
+- Mobile responsiveness.
+
+ARTICLE SUBMISSION:
+- Validation.
+- Database saving.
+- Unique submission ID.
+- Confirmation.
+- Admin review.
+- Approval.
+- Rejection.
+- Revision request.
+- Publishing restrictions.
+
+MAGAZINE:
+- Create issue.
+- Upload cover.
+- Add articles.
+- Preview.
+- Publish.
+- Download.
+- Archive.
+
+E-PAPER:
+- Upload PDF.
+- Preview.
+- Publish.
+- Download.
+- Unavailable PDF handling.
+
+DATE SYSTEM:
+- Correct weekday.
+- Correct date.
+- Midnight IST transition.
+- Month transitions.
+- Year transitions.
+- Leap years.
+- Historical article dates.
+- Historical edition dates.
+- Scheduled publishing.
+
+ADMIN:
+- Authentication.
+- Authorization.
+- Content management.
+- File management.
+- Audit logging.
+- Destructive-action confirmation.
+
+Fix all critical issues before delivery.
+
+Do not claim features work unless they have actually been implemented and tested.
+
+==================================================
+23. FINAL PROJECT DELIVERY
+==================================================
+
+Deliver a complete project folder containing:
+
+1. All frontend source code.
+2. All backend source code.
+3. Database schema.
+4. Database migrations.
+5. Authentication.
+6. Admin dashboard.
+7. Article management.
+8. Public writing submissions.
+9. Editorial approval workflow.
+10. Monthly magazine system.
+11. E-paper system.
+12. Automatic date and day system.
+13. Content scheduling.
+14. Search.
+15. Newsletter.
+16. Contact system.
+17. SEO implementation.
+18. Security configuration.
+19. Testing files.
+20. Environment example.
+21. README.
+22. Deployment documentation.
+
+Provide exact installation commands.
+
+Provide database setup instructions.
+
+Provide Supabase configuration instructions.
+
+Provide first administrator creation instructions.
+
+Provide domain connection instructions.
+
+Provide deployment instructions.
+
+Provide a testing report.
+
+Do not omit essential source files.
+
+Do not leave essential functionality as TODOs.
+
+Do not use fake API responses as genuine live data.
+
+Do not leave buttons or forms non-functional.
+
+If credentials or external services are required, implement the integration and document the configuration steps.
+
+==================================================
+24. DEVELOPMENT EXECUTION ORDER
+==================================================
+
+Build the project systematically.
+
+PHASE 1:
+Branding, logo, design system, masthead, navigation and homepage.
+
+PHASE 2:
+Database, backend, authentication and administrator access.
+
+PHASE 3:
+News management, article pages and public submissions.
+
+PHASE 4:
+Editorial review and approval system.
+
+PHASE 5:
+Monthly magazine and e-paper publishing.
+
+PHASE 6:
+Automatic date, day, calendar and scheduling.
+
+PHASE 7:
+Search, newsletter, contact and SEO.
+
+PHASE 8:
+Security, performance, testing and deployment.
+
+First inspect the available development environment and create the project structure.
+
+Implement the entire application in real source files.
+
+Run the build and tests.
+
+Fix errors before final delivery.
+
+If the development environment cannot access external credentials or deploy the domain, finish the implementation and provide precise manual setup instructions rather than pretending deployment succeeded.
+
+==================================================
+FINAL BRAND STATEMENT
+==================================================
+
+THE CONTINENTAL
+
+INDEPENDENT JOURNALISM. INFORMED WORLD.
+
+TRUTH WITHOUT FEAR. FACTS WITHOUT FAVOUR.
+
+FIRST NEWSPAPER EDITION:
+1 JANUARY 2027.
+
+FIRST MONTHLY MAGAZINE:
+JANUARY 2027.
+
+Build a publication that looks professional, functions reliably, protects editorial independence and can grow into a respected international digital newspaper and magazine.
+
+The final result must be a complete, deployable and maintainable publishing platform — not just a beautiful website design.

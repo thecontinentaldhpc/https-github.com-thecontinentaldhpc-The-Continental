@@ -1,0 +1,328 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Public-safe user profile storing display name, role, and login timestamps.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "role": {
+          "type": "string",
+          "enum": ["reader", "super_admin"]
+        },
+        "lastLoginAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["uid", "displayName", "role", "lastLoginAt", "createdAt", "updatedAt"]
+    },
+    "UserPrivateInfo": {
+      "title": "UserPrivateInfo",
+      "description": "Isolated PII subcollection storing verified user email addresses or phone numbers.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "maxLength": 180
+        },
+        "phoneNumber": {
+          "type": "string",
+          "minLength": 6,
+          "maxLength": 32
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["uid", "createdAt", "updatedAt"]
+    },
+    "WriterSubmission": {
+      "title": "WriterSubmission",
+      "description": "Contributor manuscript submission metadata synchronized after authenticated login.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "submissionCode": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 40
+        },
+        "authorUid": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "authorName": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 120
+        },
+        "authorEmail": {
+          "type": "string",
+          "format": "email",
+          "maxLength": 180
+        },
+        "title": {
+          "type": "string",
+          "minLength": 6,
+          "maxLength": 220
+        },
+        "categoryId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "status": {
+          "type": "string",
+          "enum": ["Submitted", "Under Review", "Revision Requested", "Approved", "Rejected", "Published"]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["id", "submissionCode", "authorUid", "authorName", "authorEmail", "title", "categoryId", "status", "createdAt", "updatedAt"]
+    },
+    "AdminNotification": {
+      "title": "AdminNotification",
+      "description": "Editorial and reader alert records addressed to thecontinental.dhpc@gmail.com.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "eventType": {
+          "type": "string",
+          "enum": ["user_login", "user_registered", "newsletter_subscribe", "submission_received", "contact_message"]
+        },
+        "recipientEmail": {
+          "type": "string",
+          "format": "email",
+          "maxLength": 180
+        },
+        "actorUid": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "actorEmail": {
+          "type": "string",
+          "format": "email",
+          "maxLength": 180
+        },
+        "actorName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "subject": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 220
+        },
+        "message": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 1000
+        },
+        "isRead": {
+          "type": "boolean"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["id", "eventType", "recipientEmail", "actorUid", "actorEmail", "actorName", "subject", "message", "isRead", "createdAt"]
+    },
+    "NewsletterSubscriber": {
+      "title": "NewsletterSubscriber",
+      "description": "Reader newsletter subscription record synced to Firestore to trigger Cloud Function email alerts.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "maxLength": 180
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "unsubscribed"]
+        },
+        "consentGiven": {
+          "type": "boolean"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "subscribedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["id", "email", "status", "consentGiven", "source", "subscribedAt", "updatedAt"]
+    },
+    "SavedArticleRef": {
+      "title": "SavedArticleRef",
+      "description": "Article reference saved to a reader's Firestore profile for their Reading List.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "userId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "articleId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "slug": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "summary": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "categoryName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "categorySlug": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "authorName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "featuredImageUrl": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "publishedAt": {
+          "type": "string",
+          "maxLength": 64
+        },
+        "savedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "userId",
+        "articleId",
+        "slug",
+        "title",
+        "summary",
+        "categoryName",
+        "categorySlug",
+        "authorName",
+        "publishedAt",
+        "savedAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "UserProfile" },
+      "description": "Authenticated reader and administrator profile records."
+    },
+    "/users/{userId}/private/{docId}": {
+      "schema": { "$ref": "UserPrivateInfo" },
+      "description": "Isolated private PII document storing user email."
+    },
+    "/submissions/{submissionId}": {
+      "schema": { "$ref": "WriterSubmission" },
+      "description": "Authenticated writer article submissions."
+    },
+    "/admin_notifications/{notificationId}": {
+      "schema": { "$ref": "AdminNotification" },
+      "description": "Editorial alerts addressed to thecontinental.dhpc@gmail.com."
+    },
+    "/newsletter_subscribers/{subscriberId}": {
+      "schema": { "$ref": "NewsletterSubscriber" },
+      "description": "Newsletter subscription records triggering Cloud Function email notifications."
+    },
+    "/users/{userId}/saved_articles/{articleId}": {
+      "schema": { "$ref": "SavedArticleRef" },
+      "description": "User reading list bookmarks saved to their Firestore profile."
+    }
+  }
+}

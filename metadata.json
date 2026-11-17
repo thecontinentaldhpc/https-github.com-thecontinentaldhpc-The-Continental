@@ -1,0 +1,8 @@
+{
+  "name": "THE CONTINENTAL HANFRAQ final",
+  "description": "Independent Journalism. Informed World. Truth Without Fear. Facts Without Favour. Digital newspaper and monthly magazine publishing platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

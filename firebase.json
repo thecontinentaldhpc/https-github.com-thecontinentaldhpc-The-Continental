@@ -1,0 +1,24 @@
+{
+  "firestore": [
+    {
+      "database": "ai-studio-thecontinentalha-f62a1e10-9fab-4688-b244-fa4076cfa10e",
+      "rules": "firestore.rules"
+    }
+  ],
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    }
+  ]
+}
